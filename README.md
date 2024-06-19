@@ -10,3 +10,10 @@ remixd -s /Users/lipengyi/solSecond/gasOptimize -u https://remix.ethereum.org
 
 forge test --gas-report
 forge test -vv    # look the console logs
+
+options:
+--match-contract ConstantDemoTest
+
+demo:
+forge test --match-contract ConstantDemoTest --gas-report
+forge test --match-contract ConstantDemoTest -vv
