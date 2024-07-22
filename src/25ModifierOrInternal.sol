@@ -7,14 +7,18 @@ pragma solidity 0.8.25;
  * 内部函数	159309	28391	28401	28435
  *
  * Abviously, internal functions are more gas-efficient than modifiers in deployment.
+ *
  * At the same time, modifiers are more gas-efficient than internal functions in function execution.
+ * Gas used will inrease when more functions add modifier.
+ * 24 gas will be saved per call
  */
 
-/** deployment gas cost: 195435
-    gas per call:
-              restrictedAction1: 28367
-              restrictedAction2: 28377
-              restrictedAction3: 28411
+/**
+ * deployment gas cost: 195435
+ *     gas per call:
+ *               restrictedAction1: 28367
+ *               restrictedAction2: 28377
+ *               restrictedAction3: 28411
  */
 contract Modifier {
     address owner;
@@ -42,11 +46,12 @@ contract Modifier {
     }
 }
 
-/** deployment gas cost: 159309
-    gas per call:
-              restrictedAction1: 28391
-              restrictedAction2: 28401
-              restrictedAction3: 28435
+/**
+ * deployment gas cost: 159309
+ *     gas per call:
+ *               restrictedAction1: 28391
+ *               restrictedAction2: 28401
+ *               restrictedAction3: 28435
  */
 contract InternalFunction {
     address owner;

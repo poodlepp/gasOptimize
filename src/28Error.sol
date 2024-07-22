@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.25;
 
-// 4bytes
+// just 4bytes
 contract CustomError {
     error InvalidAmount();
 
@@ -10,7 +10,7 @@ contract CustomError {
     }
 }
 
-// 64bytes
+// 64bytes at least
 // This uses more gas than the above contract
 contract NoCustomError {
     function withdraw(uint256 _amount) external pure {

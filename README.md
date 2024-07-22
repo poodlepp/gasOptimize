@@ -20,6 +20,7 @@ forge test --match-contract ConstantDemoTest -vvvvv
 
 ####  01 - 12    gas optimize in code
 
+####  21 - 28    gas optimize in deploy
 
 
 notes:

@@ -11,6 +11,8 @@ contract ConstructorPayable {
      *
      *
      * non-constructor functions   ???  im not sure.
+     * non-constructor funstions are used by external users, non payable maybe is more safe.
+     * non-constructor functions which used by admin, payable will be better.
      */
     constructor() payable {}
 }
