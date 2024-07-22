@@ -1,5 +1,5 @@
 /**
- * SSTORE Key-value 都是32bytes
+ * SSTORE Key,value 都是32bytes
  * SSTORE 32bytes 22100gas   690gas/byte
  * 写入智能合约 200gas/byte
  */
@@ -8,6 +8,7 @@
  * 对于大量的仅需写入一次的数据  应该考虑SSTORE2
  * CREATE EXTCODECOPY  其实是以合约代码的形式来存储了，细节暂不研究，部署的地址取决于数据
  * CREATE2 是类似的原理
+ * 实际上是CREATE 代替了 SSTORE
  */
 
 /**

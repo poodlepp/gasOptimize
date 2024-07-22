@@ -14,7 +14,9 @@ contract GasPackageDemo {
         uint80 y = uint80(packedVariables);
         return (x, y);
     }
+}
 
+contract GasPackageDemo2 {
     // evm packing
     uint80 public var1;
     uint80 public var2;
@@ -27,7 +29,9 @@ contract GasPackageDemo {
     function loadVars2() external view returns (uint80, uint80) {
         return (var1, var2);
     }
+}
 
+contract GasPackageDemo3 {
     // no packing
     uint256 public var3;
     uint256 public var4;

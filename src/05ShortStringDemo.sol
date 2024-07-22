@@ -6,5 +6,5 @@ pragma solidity 0.8.25;
  * so limit the string in 32 bytes is meaningful.
  *
  * short string   0x  length*2  ---   data
- * long string   slot1  just length*2+1     slot2 data ...
+ * long string   slot0  just length*2+1     slot[keccak256(abi.encode(0))] 存放data ...
  */

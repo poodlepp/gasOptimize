@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.25;
 
-// The order ot the variables affects the slot allocation.
+// The order of variables affects the slot allocation.
 
 contract StructPackDemo {
     struct unpackedStruct {
@@ -11,8 +11,7 @@ contract StructPackDemo {
     }
 
     // Starts at slot 0
-    unpackedStruct details1 =
-        unpackedStruct(53_000, 21_000, address(0xdeadbeef));
+    unpackedStruct details1 = unpackedStruct(53_000, 21_000, address(0xdeadbeef));
 
     function unpack1() external view returns (unpackedStruct memory) {
         return details1;

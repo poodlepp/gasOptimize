@@ -4,6 +4,10 @@ pragma solidity 0.8.25;
 contract MemoryDemo {
     uint256 public number;
 
+    /**
+     * A small times of reading storage is reommended.
+     * Managing memory is cheaper.
+     */
     function increment1() public {
         require(number < 10);
         number = number + 1;

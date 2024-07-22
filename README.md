@@ -16,4 +16,12 @@ options:
 
 demo:
 forge test --match-contract ConstantDemoTest --gas-report
-forge test --match-contract ConstantDemoTest -vv
+forge test --match-contract ConstantDemoTest -vvvvv
+
+####  01 - 12    gas optimize in code
+
+
+
+notes:
+- 一些优化经验在实际情况中可能并不理想，编译器有时是不可预测的，所以以实际验证为准
+- 可读性也是需要考虑的

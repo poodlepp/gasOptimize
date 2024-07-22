@@ -2,16 +2,17 @@
 pragma solidity 0.8.25;
 
 /**
- * 使用mapping 代替  array
+ * 07 使用mapping 代替  array
  * 在get查询的场景，可以节省约1/3的gas消耗
  * array[1]  默认会包含长度检测，mapping没有这个步骤
  * 也要注意实际场景中的区别，不能无脑替换
+ * 见下面demo
  */
 
 /**
- * 08 知识点写在这里
+ * 08  另一种实现方式
  * 也可以在array的基础上 实现同样的效果
- * openzeppelin   Arrays.sol
+ * openzeppelin   Arrays.sol  unsafeAccess
  * 同样是跳过了长度的检查，自己要确保不会越界
  * @notice
  */
