@@ -6,9 +6,11 @@ pragma solidity 0.8.25;
  * 02 ECDSA 签名  代替  merkle tree； 更便宜
  * 03 ERC20Permit  使用签名来进行授权转账
  *  很多优势 节省gas,提高体验，增强安全性 等等
+ * permit2 就是增加了一个中间角色  给普通的ERC20也能使用EIP2612
+ * https://learnblockchain.cn/article/5161
  * 04 游戏等场景用L2
  * 05 状态通道 古老的方式，共享签名。。
- * 06 委托投票
+ * 06 委托投票，减少交易数量，降低消耗
  * 07 ERC1155 能管理多种ERC721,ERC20  尤其是多种token场景，性能提升明显
  * 08 ERC1155 转账方法上有回调，如果不需要可以使用ERC6909代替
  * 09 UUPS 相对 透明代理更省gas；  透明代理需要proxy1967读取管理员地址验证，UUPS更省gas
