@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import {GasPackageDemo, GasPackageDemo2, GasPackageDemo3} from "../src/03GasPackageDemo.sol";
+import {GasPackageDemo, GasPackageDemo2, GasPackageDemo3} from "../src/01code/03GasPackageDemo.sol";
 
 contract GasPackageDemoTest is Test {
     GasPackageDemo instance;

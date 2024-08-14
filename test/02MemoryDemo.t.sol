@@ -2,7 +2,7 @@
 pragma solidity ^0.8.25;
 
 import "forge-std/Test.sol";
-import "../src/02MemoryDemo.sol";
+import "../src/01code/02MemoryDemo.sol";
 
 contract MemoryDemoTest is Test {
     MemoryDemo instance;

@@ -5,11 +5,21 @@ contract MemoryDemo {
     uint256 public number;
 
     /**
-     * A small times of reading storage is reommended.
-     * Managing memory is cheaper.
+     * SLOAD 2000GAS   后续每次100gas
+     * SSTORE 更新100gas
+     *
+     * SLOAD 存入内存  后续每次3gas
      */
     function increment1() public {
         require(number < 10);
+        number = number + 1;
+        number = number + 1;
+        number = number + 1;
+        number = number + 1;
+        number = number + 1;
+        number = number + 1;
+        number = number + 1;
+        number = number + 1;
         number = number + 1;
     }
 

@@ -3,9 +3,12 @@ pragma solidity 0.8.25;
 
 /**
  * The first assignment of a storage variable incurs particularly high gas costs.
- * 20000gas/slot
+ * nums   20000
+ * constantNums   22100gas/slot
  * Update operation just cost little gas comparably.
- * Big number or little number does not matter almostly.
+ * 100gas
+ * 
+ * Big number or little number does not matter  (selector过程会影响gas， type.max 会影响gas).
  *
  * if you want to manage two states ,1&2 is better than 0&1
  */

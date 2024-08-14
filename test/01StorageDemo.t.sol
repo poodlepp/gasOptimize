@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "../src/01StorageDemo.sol";
+import "../src/01code/01StorageDemo.sol";
 import "forge-std/console.sol";
 
 contract StorageDemoTest is Test {
